@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="vn-VN">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Woomxu Truyen</title>
+        <meta name="description" content="Trang đọc truyện hay và mới nhất."/> 
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    
+    <body>
+        <header id="main-header" >
+            <div class="container">
+                <h1 class="logo">
+                    <a><img src="images/logo.jpg" alt="" width="65" height="50" title="đọc truyện">Woomxu Truyen</a>
+                </h1>
+
+                <ul class="main-nav">
+                    <li>
+                        <a href="#" rel="nofollow"><img src="images/fa-tag.png" alt="" width="20" height="20">Thể loại</a>
+                        <ul>
+                            <li><a title="Truyện tiên hiệp" href="#"><img src="images/fa-tag.png" alt="" width="20" height="20"> Tiên Hiệp</a></li>
+                            <li><a title="Truyện kiếm hiệp" href="#"><img src="images/fa-tag.png" alt="" width="20" height="20"> Kiếm Hiệp</a></li>
+                            <li><a title="Truyện ngôn tình" href="#"><img src="images/fa-tag.png" alt="" width="20" height="20"> Ngôn Tình</a></li>
+                            <li><a title="Truyện teen" href="#"><img src="images/fa-tag.png" alt="" width="20" height="20"> Truyện Teen</a></li>
+                            <li><a title="Truyện đô thị" href="#"><img src="images/fa-tag.png" alt="" width="20" height="20"> Đô Thị</a></li>
+                            <li><a title="Truyện xuyên không" href="#"><img src="images/fa-tag.png" alt="" width="20" height="20"> Xuyên Không</a></li>
+                            <li><a title="Truyện ma" href="#"><img src="images/fa-tag.png" alt="" width="20" height="20"> Truyện Ma</a></li>
+                            <li><a title="Truyện trinh thám" href="#"><img src="images/fa-tag.png" alt="" width="20" height="20"> Trinh thám</a></li>
+                            <li><a title="Truyện huyền huyễn" href="#"><img src="images/fa-tag.png" alt="" width="20" height="20"> Huyền Huyễn</a></li>
+                            <li><a title="Truyện võng du" href="#"><img src="images/fa-tag.png" alt="" width="20" height="20"> Võng Du</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/fa-list.png" alt="" width="20" height="20"></i> Sắp xếp</a>
+                        <ul>
+                            <li><a href="#" title="Truyện VIP"><img src="images/fa-diamond.png" alt="" width="40" height="40"> Truyện VIP</a></li>
+                            <li><a href="#" title="Truyện mới đăng"><img src="images/fa-cloud-upload.png" alt="" width="20" height="20"> Mới Đăng</a></li>
+                            <li><a href="#" title="Truyện được yêu thích"><img src="images/fa-like.jpg" alt="" width="20" height="20"> Yêu thích</a></li>
+                            <li><a href="#" title="Truyện full"><img src="images/fa-signal.png" alt="" width="20" height="20"> Truyện Full</a></li>
+                        </ul>
+                    </li>  
+                </ul>
+
+                <div id="search_form">
+                    <form role="search" method="GET" action="index.html">
+                        <input placeholder="Tìm truyện, tác giả..." autocomplete="off">
+                        <button name="action_search" id="searchsubmit" type="submit" aria-label="Tìm kiếm"><img src="images/fa-search.jpg" alt="" width="30" height="30"></button>
+                    </form>
+                    <div id="search_result"></div>
+                </div>
+                <div id="userPanel"></div>
+
+                <img src="images/person.png" id="img-person">
+                <a href="#" id="thanhvien">
+                    
+                    <span id="tv">Thành viên</span>
+                </a>
+                <div id="login-box">
+                    <button type="button" id="close-btn">x</button>
+                    <hr>
+                    <h1 style="text-align: center;">ĐĂNG NHẬP</h1>
+                    <form method="post">
+                        <input type="text" name="email" id="username" placeholder="Tài khoản">
+                        <input type="password" name="pass" id="password" placeholder="Mật khẩu">
+                    </form>
+
+                    <button type="submit" id="login-btn">Đăng nhập</button>
+                    <div style="margin-top: 30px; text-align: center;">
+                        <a href="#" id="quenmk">Quên mật khẩu?</a>
+                    </div>
+                    <div style="margin-top: 20px; text-align: center;">
+                        <span>Bạn chưa có tài khoản ?</span>
+                        <a href="#" id="dangkingay">Đăng kí ngay !</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </header>
+
+        <div id="truyen-sticky" style="background-color: antiquewhite; padding: 0 3px;line-height:30px; text-align: center; margin: 0;height:40px;overflow: hidden;"></div>
+
+        <div id="main" class="main">
+            <div class="container">
+                <div class="main-col">
+                    <section class="card-box">
+                        <header><h2><a href=""> TRUYỆN ĐỀ CỬ <img src="images/angle-right-black.png" alt="" width="20" height="20"></a></h2></header>
+                        <nav>
+                            <a href="#" title="Truyện Ngôn Tình Hay">Ngôn Tình</a>
+                            <a href="#" title="Truyện Teen Hay">Truyện Teen</a>
+                            <a href="#" title="Truyện Tiên Hiệp Hay">Tiên Hiệp</a>
+                            <a href="#" title="Truyện Võng Du Hay">Võng Du</a>
+                            <a href="#" title="Truyện Xuyên Không Hay">Xuyên Không</a>
+                        </nav>
+                        <div class="vip">
+                            <div class="truyen_vip">
+                                <a href="https://liethoacac.com/noi-chuyen-voi-the-gioi-cua-nguoi-chuong-1.html" title="Nói chuyện với thế giới của người" class="click">
+                                    <img src="images/NCVTGCN.jpg" alt="" width="164" height="211">
+                                </a>
+                                <div class="info">
+                                    <h3 class="title" itemprop="name">
+                                        <a href="https://liethoacac.com/noi-chuyen-voi-the-gioi-cua-nguoi-chuong-1.html" itemprop="url">Nói Truyện Với Thế Giới Của Người</a>
+                                    </h3>
+                                    <p class="chapter">Chương 105</p>
+                                    <meta itemprop="author" content="Đào Đào Nhất Luân">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot-1"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Đẳng cấp quý cô" class="click">
+                                    <img src="images/DCQC.jpg" alt="" width="164" height="211">
+                                </a>
+                                <div class="info">
+                                    <h3 class="title" itemprop="name">
+                                        <a href="#">Đẳng Câp Qúy Cô</a>
+                                    </h3>
+                                    <p class="chapter">Full</p>
+                                    <meta itemprop="author" content="Tống Cửu Cận">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot-1"></span>
+                            </div>
+                                
+                            <div class="truyen_vip">
+                                <a href="#" title="Yêu là thế" class="click">
+                                    <img src="images/YLT.jpg" alt="" width="164" height="211">
+                                </a>
+                                <div class="info">
+                                    <h3 class="title" itemprop="name">
+                                        <a href="#">Yêu Là Thế</a>
+                                    </h3>
+                                    <p class="chapter">Chương 28</p>
+                                    <meta itemprop="author" content="Bất Chỉ Thị Khỏa Thái">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot-1"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Diễn trò" class="click">
+                                    <img src="images/DT.png" alt="" width="164" height="211">
+                                </a>
+                                <div class="info">
+                                    <h3 class="title" itemprop="name">
+                                        <a href="#">Diễn Trò</a>
+                                    </h3>
+                                    <p class="chapter">Full</p>
+                                    <meta itemprop="author" content="Đông Nhật Anh Đào">
+                                </div>
+                                <span class="label-status-ongoing"></span><span class="label-hot-1"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Chiều chuộng gặp đa tình" class="click">
+                                    <img src="images/GMKUTTNCH.jpg" alt="" width="164" height="211">
+                                </a>
+                                <div class="info">
+                                    <h3 class="title" itemprop="name">
+                                        <a href="#">Gió Mang Ký Ức Thổi Thành Những Cánh Hoa</a>
+                                    </h3>
+                                    <p class="chapter">Full</p>
+                                    <meta itemprop="author" content="Diệp Lạc Vô Tâm">
+                                </div>
+                                <span class="label-status-ongoing"></span><span class="label-hot-1"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Nụ hôn của sói" class="click">
+                                    <img src="images/NHCS.jpg" alt="" width="164" height="211">
+                                </a>
+                                <div class="info">
+                                   <h3 class="title" itemprop="name">
+                                        <a href="#">Nụ Hôn Của Sói</a>
+                                    </h3>
+                                    <p class="chapter">Chương 33</p>
+                                    <meta itemprop="author" content="Diệp Lạc Vô Tâm">
+                                </div>
+                                <span class="label-status-ongoing"></span><span class="label-hot-0"></span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="card-box">
+                        <header><h2><a href="#">TRUYỆN VIP <img src="images/angle-right-black.png" alt="" width="15" height="15"></a></h2></header>
+                        <div class="vip">
+                            <div class="truyen_vip">
+                                <a href="#" title="Chồng tôi mắc hội chứng bác học" class="click">
+                                    <img src="images/CTMHCBH.jpg" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Chồng Tôi Mắc Hội Chứng Bác Học</a></h3>
+                                    <p class="chapter">Chương 71</p>
+                                    <meta itemprop="author" content="Bạo Táo Đích Bàng Giải">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot-0"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Không ngoan" class="click">
+                                    <img src="images/KN.jpg" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Không Ngoan</a></h3>
+                                    <p class="chapter">Chương 12</p>
+                                    <meta itemprop="author" content="Diệp Lạc Vô Tâm">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot-0"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Búp bê cầu nắng" class="click">
+                                    <img src="images/bbcn.jpg" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Búp Bê Cầu Nắng</a></h3>
+                                    <p class="chapter">Full</p>
+                                    <meta itemprop="author" content="Thương Thái Vi">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot-0"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Sao trời của em" class="click">
+                                    <img src="images/STCE.jpg" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Sao Trời Của Em</a></h3>
+                                    <p class="chapter">Chương 41</p>
+                                    <meta itemprop="author" content="Tiểu Hương Trư Đồ Khẩu Hồng">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot-0"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Quán ăn nhỏ của mỹ nhân" class="click">
+                                    <img src="images/QANCMN.jpg" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Quán Ăn Nhỏ Của Mỹ Nhân</a></h3>
+                                    <p class="chapter">Chương 40</p>
+                                    <meta itemprop="author" content="Ngân Hà Rực Rỡ">
+                                </div>
+                                <span class="label-status-ongoing"></span><span class="label-hot-0"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Cô ấy xinh đẹp như vậy" class="click">
+                                    <img src="images/CAXDNV.jpg" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Cô Ấy Xinh Đẹp Như Vậy</a></h3>
+                                    <p class="chapter">Full</p>
+                                    <meta itemprop="author" content="Lan Chức">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot-0"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Thứ xuất thứ xuất" class="click">
+                                    <img src="images/TXTX.jpg" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Thứ Xuất Thứ Xuất</a></h3>
+                                    <p class="chapter">Full</p>
+                                    <meta itemprop="author" content="Tiêu Tương Bích Ảnh">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot-0"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Hôm nay tôi đi gặp tình nhân" class="click">
+                                    <img src="images/HNTDGTN.jpg" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Hôm Nay Tôi Đi Gặp Tình Nhân</a></h3>
+                                    <p class="chapter">Full</p>
+                                    <meta itemprop="author" content="Nguyệt Vi Yên">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot-0"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Lấy thân nuôi rồng" class="click">
+                                    <img src="images/LTNR.jpg" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Lấy Thân Nuôi Rồng</a></h3>
+                                    <p class="chapter">Chương 56</p>
+                                    <meta itemprop="author" content="Rừng Hổ Phách">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot-0"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Mị sắc" class="click">
+                                    <img src="images/MS.jpg" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Mị Sắc</a></h3>
+                                    <p class="chapter">Phần 5</p>
+                                    <meta itemprop="author" content="Hoa Hảo Nguyệt Viên">
+                                </div>
+                                <span class="label-status-ongoing"></span><span class="label-hot-0"></span>
+                            </div>
+                        </div>
+                        <footer><a class="show_more" title="Truyện VIP" href="#">XEM THÊM<img src="images/fa-angle-down.png" alt="" width="15" height="15"></a></footer>
+                    </section>
+
+                    <section class="card-box">
+                        <header><h2><a href="#">TRUYỆN FULL <img src="images/angle-right-black.png" alt="" width="20" height="20"></a></h2></header>
+                        <nav>
+                            <a href="#" title="Truyện Ngôn Tình Hay">Ngôn Tình</a>
+                            <a href="#" title="Truyện Teen Hay">Truyện Teen</a>
+                            <a href="#" title="Truyện Tiên Hiệp Hay">Tiên Hiệp</a>
+                            <a href="#" title="Truyện Võng Du Hay">Võng Du</a>
+                            <a href="#" title="Truyện Xuyên Không Hay">Xuyên Không</a>
+                        </nav>
+                        <div class="vip">
+                            <div class="truyen_vip">
+                                <a href="#" title="Bình minh và hoàng hôn" class="click">
+                                    <img src="images/BMVHH.jpg" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Bình Minh Và Hoàng Hôn</a></h3>
+                                    <p class="chapter">Full</p>
+                                    <meta itemprop="author" content="Tân Di Ổ">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Thời gian tươi đẹp của anh và em" class="click">
+                                    <img src="images/TGTDCAVE.jpg" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Thời Gian Tươi Đẹp Của Anh Và Em</a></h3>
+                                    <p class="chapter">Full</p>
+                                    <meta itemprop="author" content="Đinh Mặc">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Trầm ẩn" class="click">
+                                    <img src="images/TA.png" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Trầm Ẩn</a></h3>
+                                    <p class="chapter">Full</p>
+                                    <meta itemprop="author" content="Liêm Thập Lý">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Diễn trò" class="click">
+                                    <img src="images/TN.png" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Tâm Ngứa</a></h3>
+                                    <p class="chapter">Full</p>
+                                    <meta itemprop="author" content="Thanh Cù">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Ô vuông thủy tinh" class="click">
+                                    <img src="images/OVTT.png" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Ô Vuông Thủy Tinh</a></h3>
+                                    <p class="chapter">Full</p>
+                                    <meta itemprop="author" content="Liêm Thập Lý">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot"></span>
+                            </div>
+                            <div class="truyen_vip">
+                                <a href="#" title="Mèo hoang" class="click">
+                                    <img src="images/MH.jpg" alt="" width="164" height="211"/>
+                                </a>
+                                <div class="info">
+                                    <h3><a href="#">Mèo Hoang</a></h3>
+                                    <p class="chapter">Full</p>
+                                    <meta itemprop="author" content="Đinh Mặc">
+                                </div>
+                                <span class="label-status-end"></span><span class="label-hot"></span>
+                            </div>
+                        </div>
+                        <footer><a class="show_more" title="Truyện VIP" href="#"> XEM THÊM <img src="images/fa-angle-down.png" alt="" width="15" height="15"></a></footer>
+                    </section>
+
+                    <section class="card-box">
+                        <header><h2><a href="#">TRUYỆN MỚI ĐĂNG <img src="images/angle-right-black.png" alt="" width="20" height="20"></a></h2></header>
+                        <div class="list_truyen">
+                            <ul>
+                                <li class="truyen_moi_dang">
+                                    <div class="info">
+                                        <h3 style="margin-left: 20px" class="name"><a href="#">Yên Lặng Chờ Ba Bữa Cơm</a></h3>
+                                        <span class="vip-0"></span> <meta itemprop="author" content="Phó Bảo Trân">
+                                    </div>
+                                    <p class="view"><img src="images/fa-view.png" alt="" width="15" height="15">1234</p>
+                                </li>
+                                <li class="truyen_moi_dang">
+                                    <div class="info">
+                                        <h3 style="margin-left: 20px" class="name"><a href="#">Bệnh Yêu</a></h3>
+                                        <span class="vip-0"></span> <meta itemprop="author" content="Phó Bảo Trân">
+                                    </div>
+                                    <p class="view"><img src="images/fa-view.png" alt="" width="15" height="15">2100</p>
+                                </li>
+                                <li class="truyen_moi_dang">
+                                    <div class="info">
+                                        <h3 style="margin-left: 20px" class="name"><a href="#">Một Chút Ngọt Ngào Cho Em</a></h3>
+                                        <span class="vip-0"></span> <meta itemprop="author" content="Phó Bảo Trân">
+                                    </div>
+                                    <p class="view"><img src="images/fa-view.png" alt="" width="15" height="15">1090</p>
+                                </li>
+                                <li class="truyen_moi_dang">
+                                    <div class="info">
+                                        <h3 style="margin-left: 20px" class="name"><a href="#">Tay Của Anh Ấy Rất Mê Người</a></h3>
+                                        <span class="vip-0"></span> <meta itemprop="author" content="Thất Lý Tầm">
+                                    </div>
+                                    <p class="view"><img src="images/fa-view.png" alt="" width="15" height="15">1167</p>
+                                </li>
+                                <li class="truyen_moi_dang">
+                                    <div class="info">
+                                        <h3 style="margin-left: 20px" class="name"><a href="#">Sau Khi Đại Lão Về Hưu</a></h3>
+                                        <span class="vip-0"></span> <meta itemprop="author" content="Du Bạo Hương Cô">
+                                    </div>
+                                    <p class="view"><img src="images/fa-view.png" alt="" width="15" height="15">2200</p>
+                                </li><li class="truyen_moi_dang">
+                                    <div class="info">
+                                        <h3 style="margin-left: 20px" class="name"><a href="#">Mối Lương Duyện Trời Đánh</a></h3>
+                                        <span class="vip-0"></span> <meta itemprop="author" content="Hoa Thanh Thần">
+                                    </div>
+                                    <p class="view"><img src="images/fa-view.png" alt="" width="15" height="15">2200</p>
+                                </li><li class="truyen_moi_dang">
+                                    <div class="info">
+                                        <h3 style="margin-left: 20px" class="name"><a href="#">Tình Này Đành Hẹn Với Gió Đông</a></h3>
+                                        <span class="vip-0"></span> <meta itemprop="author" content="Hoa Thanh Thần">
+                                    </div>
+                                    <p class="view"><img src="images/fa-view.png" alt="" width="15" height="15">2200</p>
+                                </li><li class="truyen_moi_dang">
+                                    <div class="info">
+                                        <h3 style="margin-left: 20px" class="name"><a href="#">Những Ngôi Sao Nói Gì Cho Bạn</a></h3>
+                                        <span class="vip-0"></span> <meta itemprop="author" content="Gảy Goldschneider">
+                                    </div>
+                                    <p class="view"><img src="images/fa-view.png" alt="" width="15" height="15">2200</p>
+                                </li><li class="truyen_moi_dang">
+                                    <div class="info">
+                                        <h3 style="margin-left: 20px" class="name"><a href="#">Dịu Dàng Đến Bên Anh</a></h3>
+                                        <span class="vip-0"></span> <meta itemprop="author" content="Nam Lăng">
+                                    </div>
+                                    <p class="view"><img src="images/fa-view.png" alt="" width="15" height="15">2200</p>
+                                </li><li class="truyen_moi_dang">
+                                    <div class="info">
+                                        <h3 style="margin-left: 20px" class="name"><a href="#">Vật Trong Tay</a></h3>
+                                        <span class="vip-0"></span> <meta itemprop="author" content="Du Bạo Hương Cô">
+                                    </div>
+                                    <p class="view"><img src="images/fa-view.png" alt="" width="15" height="15">2200</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <footer><a class="show_more" title="Truyện mới đăng" href="#">XEM THÊM <img src="images/fa-angle-down.png" alt="" width="15" height="15"></a></footer>
+                    </section>
+                </div>
+            </div>
+            
+        </div>
+        <footer id="main-footer" >
+            <div class="container" style="padding: 10px;  background-color: #F0FFF0;">
+                <div class="col-2">
+                    <div id="logo-footer"><img src="images/logo.jpg" alt="" width="90" height="80" title="Woomxutruyen"/></div>
+                </div>
+                <div class="col-8" style="margin: 0 20px; width: 70%;">
+                    <div id="logo-text">
+                        <p style="text-align: justify ;"><a href="#">WoomxuTruyen</a> là một website đọc truyện online với rất nhiều <a href="#">truyện tiên hiệp</a>,  
+                        <a href="#">truyện kiếm hiệp</a>, <a href="#">truyện ngôn tình</a>, <a href="#">truyện teen</a>, <a href="#">truyện đô thị</a> 
+                        được chúng tôi sưu tầm từ nhiều nguồn khác nhau trên internet. Chúng tôi KHÔNG CHỊU TRÁCH NHIỆM về bản quyền! Nếu bạn cho rằng 
+                        chúng tôi đăng tải một tài liệu có bản quyền hãy <a href="#">cho chúng tôi biết</a> về điều đó </p>
+                    </div>
+                </div>
+                <div class="col-2" >
+                    <ul id="link">
+                        <li><a href="#"><img src="images/bg_twitter.jpg" alt="" title="twitter"></a></li>
+                        <li><a href="#"><img src="images/bg_gg.jpg" alt="" title="gogle+"></a></li>
+                        <li><a href="#"><img src="images/bg_fb.png" alt="" title="facebook"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="index.js"></script>
+    </body>    
+</html>
